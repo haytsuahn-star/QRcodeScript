@@ -105,7 +105,6 @@ def process_text(data):
 
 
 def process_requests(payload):
-    #Основной диспетчер. Автоматически определяет тип операции
     if not isinstance(payload, dict):
         return {"error": "Payload must be a dictionary/JSON object"}
 
